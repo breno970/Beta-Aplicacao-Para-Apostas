@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="float:left; margin-top: auto; text-align: left; padding-left: 0;margin-left: 8px;">MENU PRINCIPAL</ion-title>
+    <ion-chip style="float:right">
+      <ion-avatar>
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjYzVkYmZmIiBkPSJNMCAwaDUxMnY1MTJIMHoiLz48cGF0aCBkPSJNMjU2IDMwNGM2MS42IDAgMTEyLTUwLjQgMTEyLTExMlMzMTcuNiA4MCAyNTYgODBzLTExMiA1MC40LTExMiAxMTIgNTAuNCAxMTIgMTEyIDExMnptMCA0MGMtNzQuMiAwLTIyNCAzNy44LTIyNCAxMTJ2NTZoNDQ4di01NmMwLTc0LjItMTQ5LjgtMTEyLTIyNC0xMTJ6IiBmaWxsPSIjODJhZWZmIi8+PC9zdmc+">
+      </ion-avatar>
+      <ion-label>Avatar Chip</ion-label>
+      <ion-icon></ion-icon>
+    </ion-chip>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <!---->
+  <ion-list>
+    <ion-item [routerLink]="componentes[0].link" detail>
+      <ion-icon [name]='componentes[0].icone'></ion-icon>
+      <ion-label>{{componentes[0].nome}} <ion-badge color="secondary">2</ion-badge>
+      </ion-label>
+    </ion-item>
+    <ion-item [routerLink]="componentes[1].link" detail>
+      <ion-icon [name]='componentes[1].icone'></ion-icon>
+      <ion-label>{{componentes[1].nome}} <ion-badge color="danger">4</ion-badge>
+      </ion-label>
+    </ion-item>
+    <ion-item [routerLink]="componentes[2].link" detail>
+      <ion-icon [name]='componentes[2].icone'></ion-icon>
+      <ion-label>{{componentes[2].nome}} <ion-badge color="warning">3</ion-badge>
+      </ion-label>
+    </ion-item>
+    <ion-item [routerLink]="componentes[3].link" detail>
+      <ion-icon [name]='componentes[3].icone'></ion-icon>
+      <ion-label>{{componentes[3].nome}} <ion-badge color="primary">4</ion-badge>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-card-header>
+    <ion-card-subtitle>NOVA MANEIRA DE APOSTAR</ion-card-subtitle>
+    <ion-card-title>BOAS APOSTAS !</ion-card-title>
+  </ion-card-header>
+
+  <!-- fab placed to the (vertical) center and start -->
+  <div style="margin-top: 20px">
+    <ion-fab vertical="center" horizontal="start" edge slot="fixed">
+      <ion-fab-button>
+        <ion-icon name="settings"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="end">
+        <ion-fab-button><ion-icon name="exit"></ion-icon></ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+  </div>
+  

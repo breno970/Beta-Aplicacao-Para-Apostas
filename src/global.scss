@@ -1,0 +1,65 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+.lista{
+    list-style: none;
+    margin: 0px;
+    ;
+}
+.lista li{
+    font-size : 1.2rem;
+    padding:8px 0px 8px 0px;
+    border-bottom: 1px solid  grey;
+    margin-left: -35px;
+}
+
+
+.botaodiv{
+    text-align: center;
+    margin-top: 25px;
+    
+    }
+    
+    .botao{
+        font-size: 1.2rem;
+        color: white;
+        margin:auto;
+        width: 90%;
+        display: block;
+        text-decoration: none;
+        background-color:  rgba(54, 52, 52, 0.253);
+        border: 2px solid white;
+        padding: 10px 50px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        
+    }
+    .botao:hover{
+        background-color:rgba(122, 103, 103, 0.308);
+    }
+    
